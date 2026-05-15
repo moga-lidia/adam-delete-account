@@ -4,33 +4,154 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Șterge contul - ADAM | Bible AI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #000; color: #fff; margin: 0; padding: 40px 20px; text-align: center; }
-    .container { max-width: 400px; margin: 0 auto; }
-    h1 { font-size: 24px; margin-bottom: 8px; }
-    .subtitle { color: rgba(255,255,255,0.5); font-size: 14px; margin-bottom: 32px; }
-    .btn { display: inline-block; background: #D32F2F; color: #fff; text-decoration: none; padding: 14px 32px; border-radius: 28px; font-size: 16px; font-weight: 600; margin-bottom: 16px; }
-    .info { color: rgba(255,255,255,0.6); font-size: 13px; line-height: 1.6; margin-top: 24px; }
-    .steps { text-align: left; color: rgba(255,255,255,0.7); font-size: 14px; line-height: 2; margin: 24px 0; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #000;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .card {
+      max-width: 380px;
+      width: 100%;
+      background: rgba(20,20,20,0.92);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 28px;
+      padding: 40px 28px 36px;
+      text-align: center;
+    }
+    .logo {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+    .subtitle {
+      color: rgba(255,255,255,0.4);
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 32px;
+    }
+    .divider {
+      height: 1px;
+      background: rgba(255,255,255,0.1);
+      margin-bottom: 28px;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .description {
+      color: rgba(255,255,255,0.6);
+      font-size: 13px;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+    .btn {
+      display: block;
+      background: rgba(255,255,255,0.08);
+      color: #D32F2F;
+      text-decoration: none;
+      padding: 14px;
+      border-radius: 14px;
+      font-size: 15px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 24px;
+      transition: opacity 0.2s;
+    }
+    .btn:hover { opacity: 0.8; }
+    .steps {
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .steps-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(255,255,255,0.5);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 14px;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .step-num {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.5);
+      font-size: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-text {
+      color: rgba(255,255,255,0.7);
+      font-size: 13px;
+      line-height: 24px;
+    }
+    .warning {
+      color: rgba(255,255,255,0.35);
+      font-size: 11px;
+      line-height: 1.6;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 20px;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>ADAM | Bible AI</h1>
-    <p class="subtitle">Academia Speranța</p>
+  <div class="card">
+    <div class="logo">ADAM</div>
+    <div class="subtitle">Academia Speranța</div>
+    <div class="divider"></div>
 
-    <a class="btn" href="adamchat://delete-account">Deschide aplicația</a>
+    <div class="title">Ștergere cont</div>
+    <p class="description">
+      Pentru a șterge contul tău ADAM, urmează pașii de mai jos.
+      Asigură-te că ești autentificat în aplicație.
+    </p>
+
+    <a class="btn" href="adamchat://delete-account">Deschide aplicația ADAM</a>
 
     <div class="steps">
-      <p><strong>Cum ștergi contul:</strong></p>
-      <p>1. Deschide aplicația ADAM</p>
-      <p>2. Apasă pe meniu (☰) → Autentificare</p>
-      <p>3. Apasă „Șterge contul"</p>
-      <p>4. Confirmă ștergerea</p>
+      <div class="steps-title">Pași</div>
+      <div class="step">
+        <span class="step-num">1</span>
+        <span class="step-text">Deschide aplicația ADAM și autentifică-te</span>
+      </div>
+      <div class="step">
+        <span class="step-num">2</span>
+        <span class="step-text">Apasă pe meniu (☰) apoi pe „Deconectează-te"</span>
+      </div>
+      <div class="step">
+        <span class="step-num">3</span>
+        <span class="step-text">În dialogul care apare, apasă „Șterge contul"</span>
+      </div>
+      <div class="step">
+        <span class="step-num">4</span>
+        <span class="step-text">Confirmă ștergerea contului</span>
+      </div>
     </div>
 
-    <p class="info">
-      La ștergerea contului, toate datele personale (nume, email, istoricul conversațiilor) vor fi eliminate permanent. Procesarea cererii poate dura până la 3 zile lucrătoare.
+    <p class="warning">
+      La ștergerea contului, toate datele personale (nume, email, istoricul conversațiilor)
+      vor fi eliminate permanent. Procesarea cererii poate dura până la 3 zile lucrătoare.
     </p>
   </div>
 </body>
